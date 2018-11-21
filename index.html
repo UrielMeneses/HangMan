@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HangMan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Linking Reset -->
+    <!--<link rel="stylesheet" href="Assets/css/reset.css">-->
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="resset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/css/style.css" />
+    <link rel="stylesheet" href="Audio/css.style.css">
+    <!-- Linking JavaScript -->
+    <script src="game.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="hangman">
+        <h1>TitanFall</h1>
+
+        <audio controls loop auto-play>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="Audio/TitanFall - Soundtrack - 6. Here Be Dragons!.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+        </audio>
+    <div class="guess">
+        <form class="guessForm">
+            <input type="text" class="guessLetter" maxlength="1"  placeholder="Enter a letter . . . &#x23ce;"/> <button type="submit" class="guessButton">Guess</button>
+        </form>  
+    </div>
+        <p>Place Holder</p>
+    <div class="wrong">
+        <div class="wrongLetters"></div>
+    </div>
+        <div class="message">
+            <h1 class="title"></h1>
+            <p class="text"></p>
+            <button class="restart button">Play Again?</button>
+                      
+        </div>
+    </div>
+</div>
+</body>
+</html>
