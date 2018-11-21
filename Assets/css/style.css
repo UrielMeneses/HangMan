@@ -1,8 +1,5 @@
 
 @import url(https://fonts.googleapis.com/css?family=Allerta+Stencil);
-    color: #53BDFF;
-    color: #2EB933;
-    color: drk-blue; darken($blue, 10%);
 * {
   box-sizing: border-box;
 }
@@ -11,16 +8,23 @@ html, body {
 }
 body {
   background: url(https://stmed.net/sites/default/files/titanfall-2-hd-wallpapers-33821-4272788.jpg) no-repeat center center fixed;
+  text-align: center;
+}
+
+.container {
+  background-color: transparent;
 }
 
 a {
-  color: $blue;
+  color: blue;
   text-decoration: none;
   font-size: 14px;
-  &:hover {
-    color: lighten($blue, 10%);
-  }
 }
+a:hover {
+      color: lighten(blue, 10%);
+      text-decoration: none;
+      transition: color 1s;
+    }
 .hangman {
     font-family: 'Allerta Stencil', sans-serif;
   margin: 0 auto;
@@ -47,7 +51,7 @@ p {
 .letter {
   display: inline-block;
   color: transparent;
-  border-bottom: 5px solid $blue;
+  border-bottom: 5px solid blue;
   margin: 0 10px;
   font-size: 50px;
   padding: 10px;
@@ -62,19 +66,14 @@ p {
 }
 
 .correct {
-  color: $blue;
-  text-shadow: 1px 2px 0 $drk-blue;
-  animation: letteranim .3s ease;
+  color: blue;
+  text-shadow: 1px 2px 0 blue;
 }
 
 /* Guess Button */
 .guessForm {
   margin: 20px auto 0;
-  input, .guessButton {
-    font-family: "Londrina Solid", cursive;
-  }
-  input[type="text"] {
-    outline: none;
+  outline: none;
     padding: 10px;
     font-size: 30px;
     margin-bottom: 20px;
@@ -88,7 +87,7 @@ p {
     font-size: 30px;
     padding: 10px 20px;
     cursor: pointer;
-    background: $blue;
+    background: blue;
     color: white;
     transition: .3s;
     margin: 10px 0;
@@ -97,25 +96,26 @@ p {
 
   .guessButton a:hover {
       background: blue; 
+      text-decoration: none;
+      transition: color 1s;
   }
 }
 
 .wrongLetters {
   font-size: 20px;
-  p {
-    margin-bottom: 10px;
-  }
-  li {
-    display: inline-block;
-    font-size: 40px;
-    background:lighten(red,15%);
-    text-shadow: 1px 2px 0 red;
-    padding: 10px;
-    color: white;
-    text-transform: uppercase;
-    margin-right: 10px;
-    animation: letteranim .3s ease;
-  }
+}
+p {
+  margin-bottom: 10px;
+}
+li {
+      display: inline-block;
+      font-size: 40px;
+      background:lighten(red,15%);
+      text-shadow: 1px 2px 0 red;
+      padding: 10px;
+      color: white;
+      text-transform: uppercase;
+      margin-right: 10px;
 }
 
 .message {
@@ -130,10 +130,10 @@ p {
 /*   height: 100%; */
   background: blue;
   z-index: 12402402;
-  
+}
   h1 {
     display: none;
-    color: white;
+    text-decoration: white;
     text-shadow: 1px 2px 0 #ccc;
   }
   
@@ -146,18 +146,18 @@ p {
     color: white;
     font-size: 30px;
     display: none;
-    p {
-      color: white;
-    }
-    .highlight {
-      font-size: 40px;
-    }
   }
+p {
+  color: white;
+}
+.highlight {
+  font-size: 40px;
+}
   .muted {
     margin: 20px auto;
-    color: lighten($blue, 10%);
+    color: lighten(blue, 10%);
   }
-}
+
 
 .button {
     display: none;
@@ -166,13 +166,14 @@ p {
     font-size: 30px;
     padding: 10px 20px;
     cursor: pointer;
-    background: lighten($green, 5%);
-    color: white;
+    background: lighten(green, 5%);
     transition: .3s;
-    text-shadow: 1px 2px 0 $green;
+    text-shadow: 1px 2px 0 green;
     font-family: 'Allerta Stencil', sans-serif;
 }
 
 .button a:hover {
     background: lightgreen;
+    text-decoration: none;
+    transition: color 1s;
 }
