@@ -42,7 +42,7 @@ window.onload = function () {
   // Select Questions
   var selectCat = function () {
     if (chosenCategory === categories[0]) {
-      catagoryName.innerHTML = "Who created Titanfall?";
+      catagoryName.innerHTML = "What company created Titanfall?";
     } else if (chosenCategory === categories[1]) {
       catagoryName.innerHTML = "Who won the Multiplayer Game of the Year 2018?";
     } else if (chosenCategory === categories[2]) {
